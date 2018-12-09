@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PURAY - Your Natural Beauty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="icon" type="image/png" href="static/image/icon.PNG">
+  </head>
+  <body onload="loadCookieEnabled();">
+    <div id="bigBanner" >
+      <div class="cookieBanner"  id="cookieBanner">
+      <h3>by continuing browse this website, you agree to our use of <a href="#" style="color:grey;   text-decoration: underline;">cookies</a> . These allow us to collect information to improve your experience.</h3>
+      <a  id="cookieAgreement" href="#" onclick="cookieAgree();">I AGREE</a>
+      </div>
+
+      <div class="header" id="myHeader" style="z-index: -1;">
+        <a href="index.html">PURAY</a>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <div class="leftMenu" id="leftMenu" style="z-index:1; margin-top:30px;">
+    <input type="text" name="" value="" placeholder="SEARCH" id="search">
+    <div class="productList menuTitle" >
+      <h3>PRODUCT</h3>
+    <a href="#" style="margin-left: 30px; ">PURAY I</a>
+    </div>
+    <div class="introduction menuTitle">
+      <h3> I.D.E.A</h3>
+      <a href="#">YOUR NATURAL BEAUTY</a>
+      <a href="#">YOUR SMART HEALTH</a>
+    </div>
+
+    <div class="contactUs menuTitle">
+    <a href="contact.html" style="margin-left:0px; color:red;">CONTACT US</a>
+    </div>
+      </div>
+
+      <div class="centerContent" style="position: relative; z-index:13;">
+        <div class="centerContent1">
+          <p id="contactExplanation"> Email <br> <br> You can email us at <a style="color:grey; text-decoration: underline;" href="mailto:clientservice@puray.ca" >clientservice@puray.ca</a> <br><br>
+        An advisor will respond to you in English, French or Mandarin <br> <br> within 24 hours, from Monday to Saturday.</p>
+          <div class="Enquiry" >
+            <a id="sendEnquriy">SEND ENQUIRY</a>
+          </div>
+        </div>
+        <div class="centerContent2">
+          <form class="" action="index.html" method="post" id="enquiryForm">
+            <div class="titleInput">
+              <select name="" id="title" value=" ">
+                <option label="" style="display: none" id="hiddenOption"> </option>
+                <option value="Mr.">Mr.</option>
+                <option value="Miss.">Miss.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Ms.">Ms.</option>
+              </select>
+              <label id="titleLabel" class="titleLabel">TITLE</label>
+              <h3 id="titleReminder" class="reminder">This Field is Required.</h3>
+            </div>
+            <div class="firstNameInput">
+              <input type="text" name="" value="" placeholder="" id="firstNameInputBox" class="fieldInput">
+              <label id="firstNameLabel" class="firstNameLabel fieldLabel">FIRST NAME</label>
+              <h3 id="firstNameReminder" class="reminder">This Field is Required.</h3>
+            </div>
+            <div class="lastNameInput">
+              <input type="text" name="" value="" id="lastNameInputBox" class="fieldInput">
+              <label id="lastNameLabel" class="lastNameLabel fieldLabel">LAST NAME</label>
+              <h3 id="lastNameReminder" class="reminder">This Field is Required.</h3>
+            </div>
+            <div class="emailInput">
+              <input type="text" name="" value="" id="emailInputBox" class="fieldInput">
+              <label id="emailSubLabel" class="emailSubLabel fieldLabel">EMAIL</label>
+              <h3 id="emailReminder" class="reminder">This Field is Required.</h3>
+            </div>
+            <div class="phoneInput">
+              <input type="text" name="" value="" id="phoneInputBox" class="fieldInput">
+              <label id="phoneLabel" class="phoneLabel fieldLabel">PHONE NUMBER (OPTIONAL)</label>
+              <h3 id="phoneReminder" class="reminder">Invalid Phone Number.</h3>
+            </div>
+            <div class="commentInput">
+              <textarea name="name" rows="2" cols="80" class="fieldInput" id="commentTextArea"></textarea>
+              <label id="commentLabel" class="commentLabel fieldLabel">COMMENT</label>
+              <h3 id="commentReminder" class="reminder">This Field is Required.</h3>
+            </div>
+            <div class="SubmitAndCancel">
+              <input type="submit" name="" value="SUBMIT"  id="submitInquiry" disabled>
+               <label for="submitInquiry" id="submitInquiryButton">SUBMIT</label>
+               <a  style="margin-left:100px;" id="cancelInquiryButton">CANCEL</a>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+
+      <div class="bottomContent" style="margin-left: 100px; margin-top: -70px;" id="bottomContent">
+        <hr class="divisionLine">
+        <div class="emailSubContent">
+          <div class="leftBottom">
+            <h4>NEWSLETTER</h4>
+            <form class="" action="index.html" method="post" name="emailSubscription">
+              <div class="emailSubscription" id="emailSubscription">
+                <input type="text" name="" value="" id="emailSub" >
+                <label id="emailLabel">EMAIL</label>
+                <h5 id="notValidEmail">Please enter a valid email address.</h5>
+                <div class="emailFormOther">
+                <div class="checkbox">
+              <input type="checkbox" id="checkbox_1">
+              <label for="checkbox_1">I have read, understood and agree to the  <a href="#">Privacy Policy</a> and the  <br> <a href="#">Terms of Use</a></label>
+                  </div>
+              <div class="submitForm">
+                     <input type="submit" name="" value="REGISTER" id="submitEmail" disabled>
+                     <label for="submitEmail" id="submitEmailLabel">REGISTER</label>
+              </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="rightBottom">
+            <table style="border-spacing: 50px 0; ">
+              <tr>
+                <td><a href="contact.html">Contact</a></td>
+                <td><a href="#">Instagram</a></td>
+                <td>Language &nbsp;&nbsp;
+      <div class="languageSelector">
+        <a href="#">EN</a> / <a href="#">FR</a> / <a href="#">CN</a>
+      </div>
+      </td>
+              </tr>
+              <tr>
+                <td><a href="wechat.html">Wechat</a></td>
+                <td><a href="#">Linked</a></td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+
+        <div class="footerContent">
+          <h5 id="purayLogoFooter">PURAY/Contact Us</h5>
+          <li style="text-align: center; list-style: none; margin-top:-42px; margin-left:-80px;">
+        <a id="terms" href="#">Terms & Conditions</a>
+      </li>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="static/js/jquery.js"></script>
+    <script type="text/javascript" src="static/js/utility.js"></script>
+    <script type="text/javascript" src="static/js/cookieHandler.js"></script>
+    <script type="text/javascript" src="static/js/contactFormUtility.js"></script>
+    <script type="text/javascript" src="static/js/textarea-autogrow.js"></script>
+  </body>
+</html>

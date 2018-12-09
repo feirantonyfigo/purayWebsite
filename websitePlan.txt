@@ -1,0 +1,12 @@
+
+167.114.116.239:3306
+username: purayca_admin
+password: init_1234
+
+1.Content for Puray I
+2.Content for YOUR NATURAL BEAUTY
+3.Content for Your Smart Health
+4.Wechat, Instagram and linkedIn
+
+
+Status : Failure -Test failed: The connection property 'zeroDateTimeBehavior' acceptable values are: 'CONVERT_TO_NULL', 'EXCEPTION' or 'ROUND'. The value 'convertToNull' is not acceptable.

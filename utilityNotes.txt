@@ -1,0 +1,3 @@
+
+shopifyAccount: devmail@puray.ca
+shopifyPassword: Puray2018TT

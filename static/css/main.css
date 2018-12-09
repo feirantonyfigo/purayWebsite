@@ -1,0 +1,1408 @@
+@font-face {
+    font-family: purayFont;
+    src: url("static/fonts/PURAY_FONT.woff") format('woff');
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: white;
+  height: 1000px;
+}
+
+input{
+background: rgba(0,0,0,0);
+}
+
+.cookieBanner{
+background: rgba(249,249,249);
+padding: 2px 5%;
+visibility: hidden;
+z-index: 3;
+}
+
+.cookieBanner h3{
+  color: black;
+  font-size: 11px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.cookieBanner #cookieAgreement{
+  color:rgba(131,131,131);
+  font-size: 11px;
+  float: right;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  margin-top: -26px;
+}
+
+
+.header h3{
+  color: red;
+  font-size:13px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-family: "Quicksand", sans-serif;
+text-align: center;
+margin-top: -10px;
+
+}
+
+.header {
+  padding: 20px  0px;
+  background: rgba(27,27,27,0);
+  text-align:center;
+}
+
+.header a{
+font-family: "Gochi Hand", sans-serif;
+color: black;
+letter-spacing: 0.5rem;
+margin-top: -15px;
+margin-bottom: 0px;
+font-size: 45px;
+font-weight: lighter;
+}
+
+.utilityHeader a{
+  font-size:13px;
+  font-family: "Quicksand", sans-serif;
+  color:black;
+  letter-spacing: 0.05rem;
+}
+
+.content {
+  padding: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 100px;
+}
+
+.stickyLeftMenu{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+
+.bannerUp {
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.labelUp{
+  transition-duration: 0.2s;
+  transform:translateY(-35px);
+  transition-timing-function: linear;
+}
+
+.labelDown{
+  transition-duration: 0.2s;
+  transform:translateY(0px);
+  transition-timing-function: linear;
+}
+
+.enquirylabelUp{
+  transition-duration: 0.2s;
+  transform:translateY(-15px);
+  transition-timing-function: linear;
+}
+
+.enquirylabelDown{
+  transition-duration: 0.2s;
+  transform:translateY(0px);
+  transition-timing-function: linear;
+}
+
+#search{
+  height:17px;
+  border: 0;
+  width: calc(16% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -9px black;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  background: rgba(0,0,0,0);
+}
+
+#search:focus{
+  outline: none;
+  color: grey;
+}
+
+
+#searchPrimary{
+  height:17px;
+  border: 0;
+  width: calc(16% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -9px black;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  background: rgba(0,0,0,0);
+}
+
+#searchPrimary:focus{
+  outline: none;
+  color: black;
+}
+
+
+.bottomContent #emailSub{
+  height:17px;
+  border: 0;
+  width: calc(27% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 60px;
+  position: relative;
+  z-index: 15;
+}
+
+.bottomContent #emailSub:focus {
+  outline: none;
+  box-shadow: -10px 14px 0px -8.9px black;
+}
+
+
+.bottomContent #emailLabel{
+  font-size: 11px;
+  color: grey;
+  margin-left: calc(-27% - 2px);
+  display: inline-block;
+}
+
+.emailSubscription h5{
+  font-size: 10.5px;
+  color: red;
+  letter-spacing: 0.08rem;
+  visibility: hidden;
+}
+
+
+
+::-webkit-input-placeholder { /* Chrome */
+  color: black;
+  transition: opacity 250ms ease-in-out;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+a{
+  text-decoration: none;
+    color: black;
+}
+
+a:hover{
+  opacity: 0.5;
+}
+
+
+.leftMenu{
+  margin-left:100px;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 12px;
+  z-index: 2;
+}
+
+.leftMenuAnimation{
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.productList{
+  margin-left: 10px;
+  margin-top: 50px;
+}
+
+.knowledgeTitle{
+  margin-left: 10px;
+  margin-top: 50px;
+}
+
+.knowledgeTitle a{
+  display: block;
+  line-height: 30px;
+}
+
+
+.introduction{
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+.brandInfo{
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.menuTitle h3{
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.menuTitle a{
+  margin-left: 30px;
+  display: block;
+  line-height: 30px;
+}
+
+
+.contactUs{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+
+
+.centerContent{
+margin-left: calc(50% - 65px);
+margin-top: -200px;
+font-family: "Quicksand", sans-serif;
+}
+
+.centerContent img{
+  display: block;
+}
+
+.bottomContent{
+margin-top: 450px;
+margin-left: 100px;
+letter-spacing: 0.03rem;
+font-family:  "Quicksand", sans-serif;
+position: relative;
+z-index: 13;
+}
+
+.bottomContent h4{
+  font-size: 11px;
+  font-weight: bolder;
+}
+
+.centerContent #productImg{
+  width: 130px;
+}
+
+.rightContent{
+  font-size: 14px;
+  letter-spacing: 0.08rem;
+  margin-left: 1000px;
+  font-family: "Quicksand", sans-serif;
+  margin-top: -380px;
+}
+
+.rightContent #productName{
+font-weight: bolder;
+}
+
+.rightContent #price{
+font-weight: lighter;
+font-size: 13px;
+}
+
+
+.rightBottom{
+  margin-top: -250px;
+  margin-left: 500px;
+  font-size: 11px;
+}
+
+.rightBottom td{
+padding:20px 50px 20px 50px;
+}
+
+.footerContent {
+  margin-top: 100px;
+  letter-spacing: 0.08rem;
+}
+
+.footerContent #terms{
+  font-size: 13px;
+}
+
+/*checkbox **/
+.checkbox{
+  margin-left: -22px;
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox label {
+    position: relative;
+    display: inline-block;
+    font-size: 11px;
+    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    padding-left: 26px;
+    padding-top: 4px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+
+    /*Needed for the line-height to take effect*/
+    display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+    height: 16px;
+    width: 16px;
+
+    border: 1px solid;
+    left: 0px;
+
+    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+     *to vertically center it.
+     */
+    top: 3px;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+
+    transform: rotate(-45deg);
+
+    left: 4px;
+    top: 7px;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
+
+.checkbox a{
+  font-weight: bolder;
+  color: grey;
+}
+
+.submitForm{
+  margin-top: 26px;
+}
+
+.submitForm input{
+    visibility: hidden;
+    display: block;
+}
+
+.submitForm label{
+   margin-left: 0px;
+   color: grey;
+}
+
+.submitForm label:hover{
+  opacity: 0.5;
+}
+
+.emailFormOther{
+  visibility: hidden;
+}
+
+hr.divisionLine {
+  margin-left: -100px;
+  margin-bottom: 30px;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.languageSelector{
+  display: inline;
+}
+
+.languageSelector a{
+  color: grey;
+  text-decoration: underline;
+}
+
+.centerContent #contactExplanation{
+  font-size: 13px;
+  font-family: "Quicksand", sans-serif;
+  margin-top: -250px;
+  margin-left: -60px;
+}
+
+.Enquiry{
+  margin-left: -60px;
+  margin-top: 100px;
+}
+.Enquiry #sendEnquriy{
+  color:red;
+  font-size: 14px;
+}
+
+
+.centerContent #enquiryForm{
+font-family: "Quicksand", sans-serif;
+margin-left: -60px;
+}
+
+.centerContent #title{
+  width: calc(14% - 2px);
+  border: 0px;
+  font-size: 13px;
+  background-color: rgba(0,0,0,0);
+  box-shadow: -10px 14px 0px -9px grey;
+  color:grey;
+  position: relative;
+  z-index: 12;
+}
+.centerContent #title:focus{
+  outline: none;
+}
+
+.centerContent1{
+  visibility: visible;
+  position: relative;
+  z-index: 12;
+}
+
+.centerContent2{
+  visibility: hidden;
+transform: translateY(-200px);
+position: relative;
+z-index: 11;
+}
+
+.centerContent3{
+  font-size: 13px;
+  visibility: hidden;
+  transform: translateY(-635px);
+  margin-left: -60px;
+  z-index: 10;
+}
+
+#title option{
+  color: black;
+  background-color: grey;
+}
+
+.titleLabel{
+color:grey;
+font-size: 13px;
+margin-left: calc(-14% - 1px);
+display: inline-block;
+}
+
+.form-item select {
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius:0px;
+}
+
+#titleReminder{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#firstNameReminder{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+.reminder{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+.passwordRequirement{
+  font-size: 11px;
+  font-weight: lighter;
+  color: black;
+}
+
+.firstNameInput{
+  font-size: 13px;
+  font-weight: lighter;
+  margin-left: 120px;
+  margin-top: -70px;
+}
+
+#firstNameInputBox{
+  height:17px;
+  border: 0;
+  width: calc(27% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+#firstNameInputBox:focus{
+  outline: none;
+}
+
+#firstNameLabel{
+  margin-left: calc(-27% - 2px);
+}
+
+.fieldInput{
+  height:17px;
+  border: 0;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  z-index: 12;
+}
+
+.fieldInput:focus{
+  outline: none;
+}
+
+#lastNameInputBox{
+font-size: 11px;
+width: calc(41.5% - 2px);
+margin-left: 1px;
+}
+#lastNameLabel{
+  display: inline-block;
+  margin-left: calc(-41.5% - 2px);
+}
+
+.fieldLabel{
+  font-size: 13px;
+  color: grey;
+  display: inline-block;
+}
+
+.lastNameInput{
+  margin-top: 30px;
+}
+
+
+.emailInput{
+  margin-top: 30px;
+}
+
+#emailInputBox{
+font-size: 11px;
+width: calc(41.5% - 2px);
+margin-left: 1px;
+}
+#emailSubLabel{
+  display: inline-block;
+  margin-left: calc(-41.5% - 2px);
+}
+
+.phoneInput{
+  margin-top: 30px;
+}
+
+#phoneInputBox{
+font-size: 11px;
+width: calc(41.5% - 2px);
+margin-left: 1px;
+}
+#phoneLabel{
+  display: inline-block;
+  margin-left: calc(-41.5% - 2px);
+}
+
+.commentInput{
+  margin-top: 30px;
+}
+
+
+#commentLabel{
+  display: inline-block;
+  margin-left: calc(-60% - 2px);
+}
+
+.commentLabelUp{
+  transition-duration: 0.2s;
+  transform:translateY(-35px);
+  transition-timing-function: linear;
+}
+
+#commentTextArea{
+  resize: none;
+	width: calc(60% - 2px);
+	min-height: 22px;
+	padding: 5px;
+	overflow: hidden;
+	box-sizing: border-box;
+    box-shadow: -10px 14px 0px -10.5px grey;
+    background: rgba(0,0,0,0);
+}
+
+
+
+.SubmitAndCancel input{
+display: none;
+}
+
+#submitInquiryButton{
+  color: grey;
+}
+
+#submitInquiryButton:hover{
+  opacity: 0.5;
+}
+
+
+#cancelInquiryButton{
+  color:grey;
+}
+
+#QRExplain{
+  font-size: 13px;
+  font-weight: lighter;
+  transform: translateY(50px);
+  margin-left: -150px;
+  letter-spacing: 0.1rem;
+}
+
+#thankSubscription{
+  font-size:13px;
+  color:grey;
+  font-family: "Quicksand", sans-serif;
+  font-weight: lighter;
+  transform: translateY(-180px);
+  visibility: hidden;
+}
+
+.searchResult{
+  margin-left: -450px;
+  margin-top: 150px;
+  border-spacing: 150px 100px;
+}
+.searchResult img{
+  width:120px;
+  height:auto;
+}
+
+
+.privacyPolicy{
+margin-left:100px;
+width:500px;
+
+}
+.privacyPolicy h2{
+  font-size:11px;
+  letter-spacing: 0.06rem;
+}
+
+.privacyPolicy p{
+  font-size:11px;
+  line-height: 1.82;
+  letter-spacing: 0.06rem;
+}
+
+.privacyPolicy ul{
+  font-size:11px;
+  line-height: 1.82;
+  letter-spacing: 0.06rem;
+}
+
+
+
+#userNameReminder{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#userNameInputBox{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#userNameInputBox:focus{
+  outline: none;
+}
+
+
+#userNameLabel{
+  margin-left: calc(-40% - 2px);
+}
+
+
+
+
+#passwordReminder{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#passwordInputBox{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#passwordInputBox:focus{
+  outline: none;
+}
+
+
+.accountTitle{
+  margin-left: 10px;
+  margin-top: 50px;
+}
+
+.accountTitle a{
+  display: block;
+  line-height: 30px;
+}
+
+
+#passwordLabel{
+  margin-left: calc(-40% - 2px);
+}
+
+
+.signin input{
+display: none;
+}
+
+#signInButton{
+  color: grey;
+}
+
+#signInButton:hover{
+  opacity: 0.5;
+}
+
+#invalidCredential{
+  font-size:14px;
+  color:red;
+  visibility: hidden;
+}
+
+#successModify{
+  font-size:14px;
+  color:red;
+  visibility: hidden;
+}
+
+
+
+#firstNameReminderRegister{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#firstNameInputBoxRegister{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#firstNameInputBoxRegister:focus{
+  outline: none;
+}
+
+
+#firstNameLabelRegister{
+  margin-left: calc(-40% - 2px);
+}
+
+
+
+#lastNameReminderRegister{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#lastNameInputBoxRegister{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#lastNameInputBoxRegister:focus{
+  outline: none;
+}
+
+
+#lastNameLabelRegister{
+  margin-left: calc(-40% - 2px);
+}
+
+
+
+#emailReminderRegister{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#emailInputBoxRegister{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#emailInputBoxRegister:focus{
+  outline: none;
+}
+
+
+#emailLabelRegister{
+  margin-left: calc(-40% - 2px);
+}
+
+
+
+#passwordReminderRegister{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#passwordInputBoxRegister{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#passwordInputBoxRegister:focus{
+  outline: none;
+}
+
+
+#passwordLabelRegister{
+  margin-left: calc(-40% - 2px);
+}
+
+
+#passwordReminderRegisterConfirm{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#passwordInputBoxRegisterConfirm{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#passwordInputBoxRegisterConfirm:focus{
+  outline: none;
+}
+
+
+#passwordLabelRegisterConfirm{
+  margin-left: calc(-40% - 2px);
+}
+
+
+.register input{
+display: none;
+}
+
+#registerButton{
+  color: grey;
+}
+
+#registerButton:hover{
+  opacity: 0.5;
+}
+
+#duplicateAccount{
+  font-size:14px;
+  color:red;
+  visibility: hidden;
+}
+
+#emailConfirm{
+  visibility: hidden;
+}
+#emailConfirm h3{
+  font-size: 14px;
+}
+
+
+.firstnameInputDetails{
+  font-size: 13px;
+  font-weight: lighter;
+  margin-left: 120px;
+  margin-top: -70px;
+}
+
+#firstNameInputBoxDetails{
+  height:17px;
+  border: 0;
+  width: calc(27% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+#firstNameInputBoxDetails:focus{
+  outline: none;
+}
+
+#firstNameLabelDetails{
+  margin-left: calc(-27% - 2px);
+}
+
+
+#lastNameReminderDetails{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#lastNameInputBoxDetails{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#lastNameInputBoxDetails:focus{
+  outline: none;
+}
+
+
+#lastNameLabelDetails{
+  margin-left: calc(-40% - 2px);
+}
+
+
+
+#emailReminderDetails{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#emailInputBoxDetails{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#emailInputBoxDetails:focus{
+  outline: none;
+}
+
+
+#emailLabelDetails{
+  margin-left: calc(-40% - 2px);
+}
+
+
+
+
+#emailReminderDetails{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#emailInputBoxDetails{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#emailInputBoxDetails:focus{
+  outline: none;
+}
+
+
+#emailLabelDetails{
+  margin-left: calc(-40% - 2px);
+}
+
+
+
+
+#phoneReminderDetails{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#phoneInputBoxDetails{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#phoneInputBoxDetails:focus{
+  outline: none;
+}
+
+
+#phoneLabelDetails{
+  margin-left: calc(-40% - 2px);
+}
+
+
+
+
+#DOBReminderDetails{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#DOBInputBoxDetails{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#DOBInputBoxDetails:focus{
+  outline: none;
+}
+
+
+#DOBLabelDetails{
+  margin-left: calc(-40% - 2px);
+}
+
+
+.save input{
+display: none;
+}
+
+#saveButton{
+  color: grey;
+}
+
+#saveButton:hover{
+  opacity: 0.5;
+}
+
+
+#titleDetails{
+  width: calc(14% - 2px);
+  border: 0px;
+  font-size: 13px;
+  background-color: rgba(0,0,0,0);
+  box-shadow: -10px 14px 0px -9px grey;
+  color:grey;
+  position: relative;
+  z-index: 12;
+}
+#titleDetails:focus{
+  outline: none;
+}
+
+#nationalityDetails{
+  width: calc(40% - 2px);
+  border: 0px;
+  font-size: 13px;
+  background-color: rgba(0,0,0,0);
+  box-shadow: -10px 14px 0px -9px grey;
+  color:grey;
+  position: relative;
+  z-index: 12;
+}
+#nationalityDetails:focus{
+  outline: none;
+}
+
+.nationalityLabelDetails{
+color:grey;
+font-size: 13px;
+margin-left: calc(-40% - 2px);
+display: inline-block;
+}
+
+.resetPassword a{
+  font-size:13px;
+  color:grey;
+  text-decoration: underline;
+}
+
+
+
+#currentPasswordReminder{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#currentPassword{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#currentPassword:focus{
+  outline: none;
+}
+
+
+#currentPasswordLabel{
+  margin-left: calc(-40% - 2px);
+}
+
+
+
+#newPasswordReminder{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#newPassword{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#newPassword:focus{
+  outline: none;
+}
+
+
+#newPasswordLabel{
+  margin-left: calc(-40% - 2px);
+}
+
+
+
+#newPasswordConfirmReminder{
+  font-size: 11px;
+  font-weight: lighter;
+  color: red;
+  visibility: hidden;
+}
+
+#newPasswordConfirm{
+  height:17px;
+  border: 0;
+  width: calc(40% - 2px);
+  margin-left:1px;
+  box-shadow: -10px 14px 0px -8.9px grey;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 15px;
+}
+
+#newPasswordConfirm:focus{
+  outline: none;
+}
+
+
+#newPasswordConfirmLabel{
+  margin-left: calc(-40% - 2px);
+}
+
+
+.newPasswordSave input{
+display: none;
+}
+
+#saveButtonPassword{
+  color: grey;
+}
+
+#saveButtonPassword:hover{
+  opacity: 0.5;
+}
+
+#newPasswordInterface{
+  visibility: hidden;
+  margin-top:-650px;
+  margin-bottom:300px;
+}
+
+
+#hidePasswordInterface{
+  color:grey;
+  margin-left: calc(40% - 120px);
+}
